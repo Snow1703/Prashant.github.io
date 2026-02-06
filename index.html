@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashant C B — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { background: rgba(15,23,42,0.65); backdrop-filter: blur(14px); }
+    .gradient-text {
+      background: linear-gradient(90deg,#34d399,#22d3ee,#c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .fade-up { animation: fadeUp 1s ease both; }
+    @keyframes fadeUp { from {opacity:0; transform:translateY(25px);} to {opacity:1; transform:none;} }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 w-full glass z-50 border-b border-slate-800">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <span class="font-bold text-xl tracking-wide">Prashant<span class="text-indigo-400">.dev</span></span>
+    <div class="space-x-6 hidden md:block text-sm">
+      <a href="#home" class="hover:text-indigo-400">Home</a>
+      <a href="#about" class="hover:text-indigo-400">About</a>
+      <a href="#projects" class="hover:text-indigo-400">Projects</a>
+      <a href="#skills" class="hover:text-indigo-400">Skills</a>
+      <a href="#contact" class="hover:text-indigo-400">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen relative flex items-center justify-center px-6 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=60" alt="tech background" class="w-full h-full object-cover opacity-20" />
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950/80 via-indigo-950/60 to-slate-950/90"></div>
+  </div>
+
+  <div class="absolute -top-24 -left-24 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+  <div class="absolute top-1/3 -right-24 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="uppercase tracking-widest text-slate-400 mb-4">Engineering Student • Developer • Innovator</p>
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 gradient-text">Prashant C B</h1>
+      <p class="text-xl md:text-2xl text-slate-300 mb-6">Full‑Stack & AIML Engineer building impactful systems.</p>
+      <p class="text-slate-400 max-w-xl mb-10">From intelligent fraud‑detection engines to IoT security systems and scalable web platforms — I focus on clean architecture, real‑world usability, and performance.</p>
+
+      <div class="flex flex-wrap gap-5">
+        <a href="https://github.com/Snow1703" target="_blank" class="px-7 py-3 bg-indigo-600 rounded-2xl shadow-lg hover:bg-indigo-700 transition">View GitHub</a>
+        <a href="#projects" class="px-7 py-3 border border-indigo-500 rounded-2xl hover:bg-indigo-600 transition">See Projects</a>
+        <a href="#contact" class="px-7 py-3 glass rounded-2xl hover:border-indigo-400 transition">Hire / Connect</a>
+      </div>
+
+      <div class="mt-12 grid grid-cols-3 gap-6 max-w-md">
+        <div class="glass p-5 rounded-2xl text-center">
+          <p class="text-3xl font-bold text-indigo-400">4+</p>
+          <p class="text-xs text-slate-400">Major Projects</p>
+        </div>
+        <div class="glass p-5 rounded-2xl text-center">
+          <p class="text-3xl font-bold text-indigo-400">2</p>
+          <p class="text-xs text-slate-400">Internships</p>
+        </div>
+        <div class="glass p-5 rounded-2xl text-center">
+          <p class="text-3xl font-bold text-indigo-400">10+</p>
+          <p class="text-xs text-slate-400">Core Skills</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-up hidden md:block">
+      <div class="glass p-10 rounded-3xl shadow-2xl">
+        <h3 class="text-2xl font-semibold mb-4">What I Build</h3>
+        <ul class="space-y-4 text-slate-300">
+          <li class="flex gap-3"><i class="fa-solid fa-layer-group text-indigo-400 mt-1"></i> Full‑Stack Web Applications</li>
+          <li class="flex gap-3"><i class="fa-solid fa-brain text-indigo-400 mt-1"></i> AI/ML Systems</li>
+          <li class="flex gap-3"><i class="fa-solid fa-microchip text-indigo-400 mt-1"></i> IoT & Embedded Solutions</li>
+          <li class="flex gap-3"><i class="fa-solid fa-shield-halved text-indigo-400 mt-1"></i> Secure & Scalable Platforms</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-28 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <h2 class="text-4xl font-bold mb-6">About <span class="text-indigo-400">Me</span></h2>
+      <p class="text-slate-400 leading-relaxed">I am a Bachelor of Engineering student in Information Science at Acharya Institute of Technology, Bangalore, with a diploma background in Computer Science. I’ve completed internships in Full‑Stack Java and Artificial Intelligence, building systems like Java Virtual Labs, IoT smart locks, and fraud‑detection platforms.
+        <br/><br/>
+        I enjoy transforming complex problems into elegant solutions and collaborating in fast‑moving engineering teams.</p>
+    </div>
+
+    <div class="glass p-10 rounded-3xl shadow-2xl fade-up">
+      <h3 class="font-semibold text-xl mb-4">Education</h3>
+      <ul class="space-y-4 text-slate-300">
+        <li>
+          <p class="font-medium">BE — Information Science</p>
+          <p class="text-sm text-slate-400">Acharya Institute of Technology, Bangalore</p>
+        </li>
+        <li>
+          <p class="font-medium">Diploma — Computer Science</p>
+          <p class="text-sm text-slate-400">BVVS Polytechnic, Bagalkot</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-28 bg-slate-900/40 px-6">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold mb-14 text-center">Featured <span class="text-indigo-400">Projects</span></h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <div class="group bg-slate-900 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold mb-3">Java Virtual Lab</h3>
+        <p class="text-slate-400">Simulated platform for learning Java in a controlled full‑stack environment.</p>
+        <p class="mt-4 text-indigo-400 text-sm">Java • JDBC • HTML • CSS • JS</p>
+      </div>
+
+      <div class="group bg-slate-900 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold mb-3">Smart Door Lock</h3>
+        <p class="text-slate-400">RFID‑based IoT security system using Arduino microcontrollers.</p>
+        <p class="mt-4 text-indigo-400 text-sm">Arduino • RFID • IoT</p>
+      </div>
+
+      <div class="group bg-slate-900 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold mb-3">ANTIFRAUDSTER</h3>
+        <p class="text-slate-400">AI/ML engine for detecting fraud in multi‑participant e‑commerce systems.</p>
+        <p class="mt-4 text-indigo-400 text-sm">Python • ML • Analytics</p>
+      </div>
+
+      <div class="group bg-slate-900 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold mb-3">Reserve & Dine</h3>
+        <p class="text-slate-400">Restaurant reservation and table‑management web application.</p>
+        <p class="mt-4 text-indigo-400 text-sm">Full‑Stack Web</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-28 px-6 bg-slate-950">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12">Technical <span class="text-emerald-400">Skills</span></h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-brands fa-java text-3xl text-emerald-400"></i>
+        <p class="mt-3 font-semibold">Java</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-solid fa-database text-3xl text-cyan-400"></i>
+        <p class="mt-3 font-semibold">SQL</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-solid fa-leaf text-3xl text-green-400"></i>
+        <p class="mt-3 font-semibold">MongoDB</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-brands fa-html5 text-3xl text-orange-400"></i>
+        <p class="mt-3 font-semibold">HTML</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-brands fa-css3-alt text-3xl text-blue-400"></i>
+        <p class="mt-3 font-semibold">CSS</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-brands fa-php text-3xl text-purple-400"></i>
+        <p class="mt-3 font-semibold">PHP</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-solid fa-code text-3xl text-pink-400"></i>
+        <p class="mt-3 font-semibold">C</p>
+      </div>
+      <div class="glass p-6 rounded-3xl hover:scale-105 transition">
+        <i class="fa-brands fa-python text-3xl text-yellow-400"></i>
+        <p class="mt-3 font-semibold">Python</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-28 bg-slate-900/50 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Let’s <span class="text-emerald-400">Connect</span></h2>
+    <p class="text-slate-400 mb-12">Have an opportunity or collaboration in mind? Send me a message — it will land directly in my inbox.</p>
+
+    <!-- WORKING CONTACT FORM (FormSubmit) -->
+    <form action="https://formsubmit.co/prashantc.23.beis@acharya.ac.in" method="POST" class="max-w-2xl mx-auto grid gap-6">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+      <input type="text" name="name" placeholder="Your Name" required class="glass p-4 rounded-2xl outline-none" />
+      <input type="email" name="email" placeholder="Your Email" required class="glass p-4 rounded-2xl outline-none" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="glass p-4 rounded-2xl outline-none"></textarea>
+
+      <button type="submit" class="bg-gradient-to-r from-emerald-500 to-cyan-500 py-3 rounded-2xl font-semibold hover:opacity-90 transition">Send Message</button>
+    </form>
+
+    <div class="flex justify-center gap-10 text-3xl mt-12">
+      <a href="mailto:prashantc.23.beis@acharya.ac.in" class="hover:text-emerald-400 transition"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/Snow1703" target="_blank" class="hover:text-emerald-400 transition"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-8 text-slate-500 border-t border-slate-800">© 2026 Prashant C B • Built with passion.</footer>
+
+</body>
+</html>
